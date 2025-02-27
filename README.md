@@ -41,7 +41,7 @@ In this tutorial, we will observe ICMP network traffic between two Azure Virtual
 <p>
 -From PowerShell, initiate a perpetual/non-stop ping from your Windows 10 VM to your Linux VM like so: "ping 10.0.0.5 -t" (your Linux VM private IP address may be different).
 
--In Wireshark, restart the packet capture and let it run at the same time as the perpetual ping.
+-In Wireshark, restart the packet capture by clicking on the green shark fin and let it run at the same time as the perpetual ping.
 </p>
 <br />
 
@@ -184,10 +184,10 @@ In this tutorial, we will observe ICMP network traffic between two Azure Virtual
 
 
 
-<h3>Step 4: Prepare for Part 3</h3>
+<h3>Step 4: Prepare for Part 4</h3>
 
 <p>
-<img src="https://i.imgur.com/kO6QyxT.png" width="80%" alt="Disk Sanitization Steps"/>
+<img src="" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 -From here, click on the red square symbol in the upper to stop the packet capture and directly move on to Part 3 while leaving the Wireshark and PowerShell windows open; (link).
