@@ -187,11 +187,11 @@ In this tutorial, we will observe ICMP network traffic between two Azure Virtual
 <h3>Step 4: Prepare for Part 3</h3>
 
 <p>
-<img src="https://i.imgur.com/vgk7jx7.png" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/kO6QyxT.png" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
--From here, you can directly move on to Part 3 while leaving the Wireshark and PowerShell windows open; (link).
+-From here, click on the red square symbol in the upper to stop the packet capture and directly move on to Part 3 while leaving the Wireshark and PowerShell windows open; (link).
 
--If you wish to end the lab without moving on to Part 4, close all opened windows and turn off the Windows VM session by clicking on the X on the upper bar. Additionally, make sure you stop or delete your VMs to avoid unnecessary costs and optimize resource usage.
+-If you wish to end the lab without moving on to Part 3, close all opened windows and turn off the Windows VM session by clicking on the X on the upper bar. Additionally, make sure to stop or delete your VMs to avoid unnecessary costs and optimize resource usage.
 </p>
 <br />
