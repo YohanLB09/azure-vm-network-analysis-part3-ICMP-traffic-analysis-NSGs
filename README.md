@@ -36,7 +36,7 @@ In this tutorial, we will observe ICMP network traffic between two Azure Virtual
 <h3>Step 1: Ping the Linux Virtual Machine</h3>
 
 <p>
-<img src="https://i.imgur.com/yNra2NP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/qE2S03X.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 -From PowerShell, initiate a perpetual/non-stop ping from your Windows 10 VM to your Linux VM like so: "ping 10.0.0.5 -t" (your Linux VM private IP address may be different).
