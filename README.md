@@ -62,19 +62,29 @@ In this tutorial, we will observe ICMP network traffic between two Azure Virtual
 
 
 <p>
-<img src="https://i.imgur.com/jtXUYuE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/yhkex3k.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
--Paste your Windows VM Public IP address in Remote Destop Connection and click on "Connect".
-  
--In the new pop-up window, enter your Windows VM password (the one created in Part 1) and click on "OK" to initiate the session.
+-Under "Settings", click on "Inbound security rules", then click on "Add".
+
+-In the new window, under "Destination port ranges", leave an "*" since ICMP doesn't use a specific port number. 
+
+-Under "Protocol", choose the "ICMPv4".
+
+-Under "Action", choose "Deny"; we're basically creating a rule that denies all inbound (incoming) ICMP traffic to the Linux VM.
+
+-Under "Priority", put 290 (or any number below 300) to ensure that the rule that we are creating will be evaluated (prioritized) first.
+
+-Leave all the other options at their default configuration and click on "Add". You should see the new rule added to the top of the list of existing rules.
 </p>
 <br />
 
 
 
+<h3>Step 3: Observe the ICMP traffic</h3>
+
 <p>
-<img src="https://i.imgur.com/XsmfHbI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/1oucI2O.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 -After inserting your credentials and pressing "OK", you should see this pop-up window appearing on your screen. Don't worry, this is normal as the remote computer (the Windows VM) is using a self-signed Remote Desktop Protocol (RDP) certificate, which is not automatically trusted by your local machine. You can go ahead and press "Yes" to connect to your VM since we have created it in Azure.
@@ -128,7 +138,7 @@ In this tutorial, we will observe ICMP network traffic between two Azure Virtual
 <h3>Step 3: Filter for ICMP traffic and observe</h3>
 
 <p>
-<img src="https://i.imgur.com/9KIg9Xj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/1oucI2O.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 -Type Wireshark in the Desktop Seach bar and click on "Open".
