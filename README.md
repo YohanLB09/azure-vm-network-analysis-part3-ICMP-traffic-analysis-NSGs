@@ -84,10 +84,10 @@ In this tutorial, we will observe ICMP network traffic between two Azure Virtual
 <h3>Step 3: Observe the ICMP traffic</h3>
 
 <p>
-<img src="https://i.imgur.com/1oucI2O.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/z1eXNB7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
--After inserting your credentials and pressing "OK", you should see this pop-up window appearing on your screen. Don't worry, this is normal as the remote computer (the Windows VM) is using a self-signed Remote Desktop Protocol (RDP) certificate, which is not automatically trusted by your local machine. You can go ahead and press "Yes" to connect to your VM since we have created it in Azure.
+-Go back to PowerShell and Wireshark in your Windows VM, after a couple seconds, you should notice your perpetual ping requests timing out once the rule takes effect. This means that the NSG is dropping the ICMP packets before they reach the Linux VM.
 </p>
 <br />
 
