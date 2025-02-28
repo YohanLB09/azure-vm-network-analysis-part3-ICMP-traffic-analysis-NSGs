@@ -50,7 +50,7 @@ In this tutorial, we will observe ICMP network traffic between two Azure Virtual
 <h3>Step 2: Disable ICMP incoming traffic for the Linux Virtual Machine</h3>
 
 <p>
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/yIohkeY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 -While leaving the perpetual ping and packet capture running, go back to Azure and select your Linux VM.
