@@ -47,6 +47,7 @@ In this tutorial, we will observe ICMP network traffic between two Azure Virtual
 
 
 
+
 <h3>Step 2: Disable ICMP incoming traffic for the Linux Virtual Machine</h3>
 
 <p>
@@ -81,6 +82,7 @@ In this tutorial, we will observe ICMP network traffic between two Azure Virtual
 
 
 
+
 <h3>Step 3: Observe the ICMP traffic</h3>
 
 <p>
@@ -93,102 +95,32 @@ In this tutorial, we will observe ICMP network traffic between two Azure Virtual
 
 
 
-<h3>Step 4: Re-enable ICMP incoming traffic for the Linux Virtual Machine<h3>
+
+<h3>Step 4: Re-enable ICMP incoming traffic for the Linux Virtual Machine</h3>
 
 <p>
 <img src="https://i.imgur.com/5zOk2az.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
--Go back to Azure and delete the rule that we created for the Linux VM. 
-How do you think deleting this rule will impact the ICMP traffic?
+-Go back to Azure and delete the rule that created for the Linux VM. How do you think deleting this rule will impact the ICMP traffic?
 </p>
 <br />
 
 
 
 
-<h3></h3>
+<h3>Step 5: Observe the ICMP traffic</h3>
 
 <p>
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/gDWs5rF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
+-Go back to PowerShell and Wireshark in your Windows VM, wait a few seconds and observe the ICMP traffic changing. Is it what you anticipated?
 
-</p>
-<br />
-
-
-
-<p>
-<img src="https://i.imgur.com/ZgCC1Gq.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
--Download the Windows x64 installer version. 
-  
--Once the download is completed, click on "Open file" and you should see the installation pop-up window appearing. 
-
--Follow along the Wizard while leaving all the default configuration as they are and complete the installation process.
+-You should notice successful two-way communication. This confirms that ICMP traffic is no longer being blocked by the NSG, allowing normal ping operations.
 </p>
 <br />
 
-
-
-
-<h3>Step 3: Filter for ICMP traffic and observe</h3>
-
-<p>
-<img src="https://i.imgur.com/1oucI2O.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
--Type Wireshark in the Desktop Seach bar and click on "Open".
-  
--In Wireshark, click on "Ethernet" to select the Ethernet network adapter, it should become highlighted.
-  
--Click on the shark fin on the upper left to start the packet capture.
-</p>
-<br />
-
-
-
-<p>
-<img src="https://i.imgur.com/jEjetaJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
--You will notice a high amount of traffic occurring. This is expected due to normal network operations, background processes, and Azure-related activity. 
-  
--While the packet capture is still running, type "icmp" in the search bar and press "Enter" to filter for ICMP traffic. You will observe that there are no such traffic currently happening which is normal since no device has tried to initiate a ping request to your Windows VM or vice-versa.
-</p>
-<br />
-
-
-
-<p>
-<img src="https://i.imgur.com/WjzlWrP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
--While leaving the packet capture running in Wireshark, go back to Azure, select your Linux VM, click on "Network settings" and copy your Linux VM Private IP address.
-</p>
-<br />
-
-
-
-<p>
-<img src="https://i.imgur.com/42TAeOi.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
--Type "Windows PowerShell" in the Desktop Search bar and click on "Open".
-
--In PowerShell, initiate a ping request from your Windows VM to your Linux VM like so: "ping 10.0.0.5" (your Linux VM Private IP address may be different than this one). 
-
--Observe the ping request and replies within Wireshark. Take the time to analyze and get a general idea of the information provided from the ICMP packet capture.
-
--Additionally, try pinging any website (ex: www.google.com) and observe the traffic. Can you notice any difference from the previous packet capture? What information is associated with the different systems that are communicating to one another (IP addresses, MAC addresses, protocols)?
-
--Keep experimenting with more ping requests and other commands to get more familiar with these tools. 
-
--If you don't understand the information provided by Wireshark, here is a link to their website where you will find tutorials adapted for beginners: https://www.wireshark.org/learn.
-</p>
-<br />
 
 
 
