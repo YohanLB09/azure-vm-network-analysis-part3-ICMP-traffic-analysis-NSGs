@@ -1,8 +1,6 @@
-# Part-3
+# Azure VM Network Analysis - Part 2 - ICMP Traffic Analysis and Network Security Groups (NSGs)
 
-# Azure VM Network Analysis - Part 2 - ICMP Traffic Analysis
-
-In this tutorial, we will observe ICMP network traffic between two Azure Virtual Machines using Wireshark and PowerShell.
+In this tutorial, we will experiment with Network Security Groups while observing more ICMP network traffic with Wireshark and PowerShell.
 
 <p align="center">
 <img src="https://i.imgur.com/mbLUNMY.png" alt="Traffic Examination"/>
