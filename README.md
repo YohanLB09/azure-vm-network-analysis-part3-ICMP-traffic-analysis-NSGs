@@ -93,28 +93,27 @@ In this tutorial, we will observe ICMP network traffic between two Azure Virtual
 
 
 
+<h3>Step 4: Re-enable ICMP incoming traffic for the Linux Virtual Machine<h3>
+
 <p>
-<img src="https://i.imgur.com/Vtkde9D.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/5zOk2az.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
--Once the session is initated, you should see this loading screen appearing. This indicates that you are officially connected to your Windows VM. 
-  
--Additionally, before reaching the desktop, you may be asked to configure certain features/options. These are not important for the purpose of this lab so you can leave them as disabled or manually disable them.
+-Go back to Azure and delete the rule that we created for the Linux VM. 
+How do you think deleting this rule will impact the ICMP traffic?
 </p>
 <br />
 
 
 
 
-<h3>Step 2: Install Wireshark</h3>
+<h3></h3>
 
 <p>
-<img src="https://i.imgur.com/sqtRiCZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
--Use the Microsoft Edge app on the desktop and go to www.wireshark.org.
-  
--Click on "Download".
+
 </p>
 <br />
 
