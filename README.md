@@ -100,7 +100,7 @@ In this tutorial, we will experiment with Network Security Groups while observin
 <img src="https://i.imgur.com/5zOk2az.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
--Go back to Azure and delete the rule that created for the Linux VM. How do you think deleting this rule will impact the ICMP traffic?
+-Go back to Azure and delete the rule that we created for the Linux VM. How do you think deleting this rule will impact the ICMP traffic?
 </p>
 <br />
 
@@ -135,6 +135,6 @@ In this tutorial, we will experiment with Network Security Groups while observin
 
 -From here, you can directly move on to part 4 while leaving the Wireshark and PowerShell windows open; (link)
 
--If you wish to end the lab without moving on to Part 4, close all opened windows and turn off the Windows VM session by clicking on the X on the upper bar. Additionally, make sure you stop or delete your VMs to avoid unnecessary costs and optimize resource usage.
+-If you wish to end the lab without moving on to Part 4, close all opened windows and turn off the Windows VM session by clicking on the X on the upper bar. Additionally, make sure you stop or delete your VMs in Azure to avoid unnecessary costs and optimize resource usage.
 </p>
 <br />
