@@ -97,7 +97,7 @@ In this guided lab, we will experiment with Network Security Groups (NSGs) and a
 <h3>Step 4: Re-enable ICMP incoming traffic for the Linux Virtual Machine</h3>
 
 <p>
-<img src="https://i.imgur.com/5zOk2az.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/zpQW9ZN.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 -Go back to Azure and delete the rule that we created for the Linux VM. How do you think deleting this rule will impact the ICMP traffic?
