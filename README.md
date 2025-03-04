@@ -34,7 +34,7 @@ In this guided lab, we will experiment with Network Security Groups (NSGs) and a
 <h3>Step 1: Ping the Linux Virtual Machine</h3>
 
 <p>
-<img src="https://i.imgur.com/qE2S03X.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/qE2S03X.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 -From PowerShell, initiate a perpetual/non-stop ping from your Windows 10 VM to your Linux VM like so: "ping 10.0.0.5 -t" (your Linux VM private IP address may be different).
@@ -49,7 +49,7 @@ In this guided lab, we will experiment with Network Security Groups (NSGs) and a
 <h3>Step 2: Disable ICMP incoming traffic for the Linux Virtual Machine</h3>
 
 <p>
-<img src="https://i.imgur.com/yIohkeY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/yIohkeY.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 -While leaving the perpetual ping and packet capture running, go back to Azure and select your Linux VM.
@@ -61,7 +61,7 @@ In this guided lab, we will experiment with Network Security Groups (NSGs) and a
 
 
 <p>
-<img src="https://i.imgur.com/yhkex3k.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/yhkex3k.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 -Under "Settings", click on "Inbound security rules", then click on "Add".
@@ -84,7 +84,7 @@ In this guided lab, we will experiment with Network Security Groups (NSGs) and a
 <h3>Step 3: Observe the ICMP traffic</h3>
 
 <p>
-<img src="https://i.imgur.com/z1eXNB7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/z1eXNB7.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 -Go back to PowerShell and Wireshark in your Windows VM, after a couple seconds, you should notice your perpetual ping requests timing out once the rule takes effect. This means that the NSG is dropping the ICMP packets before they reach the Linux VM.
@@ -97,7 +97,7 @@ In this guided lab, we will experiment with Network Security Groups (NSGs) and a
 <h3>Step 4: Re-enable ICMP incoming traffic for the Linux Virtual Machine</h3>
 
 <p>
-<img src="https://i.imgur.com/5zOk2az.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/5zOk2az.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 -Go back to Azure and delete the rule that we created for the Linux VM. How do you think deleting this rule will impact the ICMP traffic?
@@ -110,7 +110,7 @@ In this guided lab, we will experiment with Network Security Groups (NSGs) and a
 <h3>Step 5: Observe the ICMP traffic</h3>
 
 <p>
-<img src="https://i.imgur.com/gDWs5rF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/gDWs5rF.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 -Go back to PowerShell and Wireshark in your Windows VM, wait a few seconds and observe the ICMP traffic changing. Is it what you anticipated?
@@ -126,7 +126,7 @@ In this guided lab, we will experiment with Network Security Groups (NSGs) and a
 <h3>Step 6: Prepare for Part 4 (Final Part)</h3>
 
 <p>
-<img src="https://i.imgur.com/gE6YL31.png" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/gE6YL31.png" height="100%" width="100%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 -In PowerShell, type "Ctrl c" to stop the perpetual ping requests. 
