@@ -133,7 +133,7 @@ In this guided lab, we will experiment with Network Security Groups (NSGs) and a
 
 -In Wireshark, click on the small red square to stop the packet capture.
 
--From here, you can directly move on to part 4 while leaving the Wireshark and PowerShell windows open; (link)
+-From here, you can directly move on to part 4 while leaving the Wireshark and PowerShell windows open; https://github.com/YohanLB09/azure-vm-network-analysis-part4-network-protocols
 
 -If you wish to end the lab without moving on to Part 4, close all opened windows and turn off the Windows VM session by clicking on the X on the upper bar. Additionally, make sure you stop or delete your VMs in Azure to avoid unnecessary costs and optimize resource usage.
 </p>
